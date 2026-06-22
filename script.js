@@ -7,7 +7,7 @@ const gifStages = [
     "https://media.tenor.com/cg9eLLqS7-sAAAAi/peach-goma.gif",           
     "https://media.tenor.com/IjkcwEaDOZMAAAAi/please-please-don%27t-go.gif",             
     "https://media.tenor.com/X_TEp5v_GqUAAAAi/cat-bug.gif" 
-
+]
 const noMessages = [
     "No",
     "Này 🤔",
