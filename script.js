@@ -1,13 +1,12 @@
 const gifStages = [
-    "https://media.tenor.com/TS7aSPWwXJ4AAAAi/capoo-waiting.gif",    // 0 normal
-    "https://media.tenor.com/u-5SoRyYuA8AAAAi/confused.gif",  // 1 confused
-    "https://media.tenor.com/5ImOUsM-lWUAAAAi/fat-cat.gif",             // 2 pleading
-    "https://media.tenor.com/pIUj9rfsMEgAAAAi/bt21-really.gif",             // 3 sad
-    "https://media.tenor.com/RaekgFtPpQoAAAAi/doubtful-om-nom.gif",       // 4 sadder
-    "https://media.tenor.com/cg9eLLqS7-sAAAAi/peach-goma.gif",             // 5 devastated
-    "https://media.tenor.com/IjkcwEaDOZMAAAAi/please-please-don%27t-go.gif",               // 6 very devastated
-    "https://media.tenor.com/X_TEp5v_GqUAAAAi/cat-bug.gif"  // 7 crying runaway
-]
+    "https://media.tenor.com/TS7aSPWwXJ4AAAAi/capoo-waiting.gif",    
+    "https://media.tenor.com/u-5SoRyYuA8AAAAi/confused.gif", 
+    "https://media.tenor.com/5ImOUsM-lWUAAAAi/fat-cat.gif",            
+    "https://media.tenor.com/pIUj9rfsMEgAAAAi/bt21-really.gif",          
+    "https://media.tenor.com/RaekgFtPpQoAAAAi/doubtful-om-nom.gif",       
+    "https://media.tenor.com/cg9eLLqS7-sAAAAi/peach-goma.gif",           
+    "https://media.tenor.com/IjkcwEaDOZMAAAAi/please-please-don%27t-go.gif",             
+    "https://media.tenor.com/X_TEp5v_GqUAAAAi/cat-bug.gif" 
 
 const noMessages = [
     "No",
@@ -39,13 +38,12 @@ const yesBtn = document.getElementById('yes-btn')
 const noBtn = document.getElementById('no-btn')
 const music = document.getElementById('bg-music')
 
-// Autoplay: audio starts muted (bypasses browser policy), unmute immediately
+
 music.muted = true
 music.volume = 0.3
 music.play().then(() => {
     music.muted = false
 }).catch(() => {
-    // Fallback: unmute on first interaction
     document.addEventListener('click', () => {
         music.muted = false
         music.play().catch(() => {})
@@ -86,28 +84,23 @@ function showTeaseMessage(msg) {
 function handleNoClick() {
     noClickCount++
 
-    // Cycle through guilt-trip messages
     const msgIndex = Math.min(noClickCount, noMessages.length - 1)
     noBtn.textContent = noMessages[msgIndex]
 
-    // Grow the Yes button bigger each time
     const currentSize = parseFloat(window.getComputedStyle(yesBtn).fontSize)
     yesBtn.style.fontSize = `${currentSize * 1.35}px`
     const padY = Math.min(18 + noClickCount * 5, 60)
     const padX = Math.min(45 + noClickCount * 10, 120)
     yesBtn.style.padding = `${padY}px ${padX}px`
 
-    // Shrink No button to contrast
     if (noClickCount >= 2) {
         const noSize = parseFloat(window.getComputedStyle(noBtn).fontSize)
         noBtn.style.fontSize = `${Math.max(noSize * 0.85, 10)}px`
     }
 
-    // Swap cat GIF through stages
     const gifIndex = Math.min(noClickCount, gifStages.length - 1)
     swapGif(gifStages[gifIndex])
 
-    // Runaway starts at click 5
     if (noClickCount >= 6 && !runawayEnabled) {
         enableRunaway()
         runawayEnabled = true
