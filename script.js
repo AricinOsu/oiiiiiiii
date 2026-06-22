@@ -1,11 +1,11 @@
 const gifStages = [
     "https://media.tenor.com/TS7aSPWwXJ4AAAAi/capoo-waiting.gif",    // 0 normal
-    "https://media.tenor.com/7vdAIAUcnkUAAAAi/bugcat-capoo-ice-cream.gif",  // 1 confused
-    "https://media1.tenor.com/m/molY4aMW5uEAAAAC/thanhhuyen.gif",             // 2 pleading
-    "https://media.tenor.com/pECqfK0xuYYAAAAi/tkthao219-capoo.gif",             // 3 sad
-    "https://media.tenor.com/Wx-TCyz6GswAAAAi/bugcact-capoo.gif",       // 4 sadder
-    "https://media.tenor.com/aUNFPNeEECcAAAAi/capoo-bug.gif",             // 5 devastated
-    "https://media1.tenor.com/m/Gx3z4t3kOcMAAAAC/capoo-bug.gif",               // 6 very devastated
+    "https://media.tenor.com/u-5SoRyYuA8AAAAi/confused.gif",  // 1 confused
+    "https://media.tenor.com/5ImOUsM-lWUAAAAi/fat-cat.gif",             // 2 pleading
+    "https://media.tenor.com/pIUj9rfsMEgAAAAi/bt21-really.gif",             // 3 sad
+    "https://media.tenor.com/RaekgFtPpQoAAAAi/doubtful-om-nom.gif",       // 4 sadder
+    "https://media.tenor.com/cg9eLLqS7-sAAAAi/peach-goma.gif",             // 5 devastated
+    "https://media.tenor.com/IjkcwEaDOZMAAAAi/please-please-don%27t-go.gif",               // 6 very devastated
     "https://media.tenor.com/X_TEp5v_GqUAAAAi/cat-bug.gif"  // 7 crying runaway
 ]
 
