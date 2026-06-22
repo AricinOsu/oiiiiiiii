@@ -12,19 +12,19 @@ const gifStages = [
 const noMessages = [
     "No",
     "Này 🤔",
-    "Emmmmmmm 🥺",
-    "Anh buồn đấyyyyyy",
-    "Em thật hỏoo 😢",
-    "Đi mò emmmmmm 💔",
-    "Em đừng đối xử với anh như vayyyyy",
-    "Đi mà em em em em emmmm 😭",
-    "Em chịu thua iiiii 😜"
+    "Điêuuuu 🥺",
+    "Không mệt thật á!??",
+    "Vớ vẩnnnn",
+    "Nghỉ ngơi một chút điii",
+    "Mai còn đi thi mờ mờ mờ",
+    "Đừng cố bấm nữaaaa 😭",
+    "Vi chịu thua iiiii 😜"
 ]
 
 const yesTeasePokes = [
     "hỏ",
-    "ủa thiệt hở em 👀",
-    "anh đoán là em chỉ muốn biết chuyện gì sẽ xảy ra nếu em đồng ý sớm thồiiii",
+    "ủa thiệt hở 👀",
+    "t đoán là vi chỉ muốn biết chuyện gì sẽ xảy ra nếu bấm đồng ý sớm thồiiii",
     "thiệt hỏ, cơ hội cuối đóooo"
 ]
 
